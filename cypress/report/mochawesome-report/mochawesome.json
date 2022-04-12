@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-12T19:08:14.457Z",
+    "end": "2022-04-12T19:09:49.844Z",
+    "duration": 95387,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5d2bc26-92fa-489a-98f5-4b7d8c91e1c5",
+      "title": "",
+      "fullFile": "cypress/integration/LoginTest.js",
+      "file": "cypress/integration/LoginTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+          "title": "Douglas Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate if user is logged in successfully using correct credentials",
+              "fullTitle": "Douglas Login Page Validate if user is logged in successfully using correct credentials",
+              "timedOut": null,
+              "duration": 19839,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'yogesh16991@gmail.com';\npassword = 'Cypress@2022';\nloginPage.enterCredentials(username, password);\nloginPage.clickLoginButton();\nloginPage.validateLoginSuccessfully();",
+              "err": {},
+              "uuid": "a566467b-5e3d-44d1-accf-84e4e0ae885a",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user gets error for incorrect username",
+              "fullTitle": "Douglas Login Page Validate if user gets error for incorrect username",
+              "timedOut": null,
+              "duration": 13258,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'incorrect@gmail.com';\npassword = 'Cypress@2022';\nloginPage.enterCredentials(username, password);\nloginPage.clickLoginButton();\nloginPage.validateLoginError(loginErrorText);",
+              "err": {},
+              "uuid": "c4bb2ecc-c08b-4823-891c-a979248e14d8",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user gets error for incorrect Password",
+              "fullTitle": "Douglas Login Page Validate if user gets error for incorrect Password",
+              "timedOut": null,
+              "duration": 12435,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'yogesh16991@gmail.com';\npassword = 'incorrect@2022';\nloginPage.enterCredentials(username, password);\nloginPage.clickLoginButton();\nloginPage.validateLoginError(loginErrorText);",
+              "err": {},
+              "uuid": "74d160fe-4400-44e0-af52-2aa62a8eb301",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user gets error for incorrect credentials",
+              "fullTitle": "Douglas Login Page Validate if user gets error for incorrect credentials",
+              "timedOut": null,
+              "duration": 10807,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'incorrect@gmail.com';\npassword = 'incorrect@2022';\nloginPage.enterCredentials(username, password);\nloginPage.clickLoginButton();\nloginPage.validateLoginError(loginErrorText);",
+              "err": {},
+              "uuid": "01655e66-05f0-428b-b80f-f3cd2e21f4d9",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user can reset password using Forgot Password",
+              "fullTitle": "Douglas Login Page Validate if user can reset password using Forgot Password",
+              "timedOut": null,
+              "duration": 10768,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'incorrect@gmail.com';\nloginPage.clickForgotPassword();\nloginPage.enterForgotPasswordEmail(username);\nloginPage.clickSendEmailButtton();\nloginPage.validateEmailSentConfirmationWindow(emailSentText);",
+              "err": {},
+              "uuid": "9b4489c1-ddff-4684-80c5-e08b429b1f91",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user gets error for invalid email format in username",
+              "fullTitle": "Douglas Login Page Validate if user gets error for invalid email format in username",
+              "timedOut": null,
+              "duration": 11611,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "username = 'incorrectgmail.com';\npassword = 'Cypress@2022';\nloginPage.enterCredentials(username, password);\nloginPage.clickLoginButton();\nloginPage.validateEmailIdErrorMessage(emailErrorText);",
+              "err": {},
+              "uuid": "530ee69c-6089-43ba-b33b-c988f58ac8a2",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if user gets mandatory fields error for username and password",
+              "fullTitle": "Douglas Login Page Validate if user gets mandatory fields error for username and password",
+              "timedOut": null,
+              "duration": 9903,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.clickLoginButton();\nloginPage.validateMandatoryFieldErrorMessage(mandatoryFieldsText);",
+              "err": {},
+              "uuid": "3e0a7078-94e9-466b-9d55-d6f4c1953024",
+              "parentUUID": "356f3ee0-f1c3-439f-a368-efb25f1ae168",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a566467b-5e3d-44d1-accf-84e4e0ae885a",
+            "c4bb2ecc-c08b-4823-891c-a979248e14d8",
+            "74d160fe-4400-44e0-af52-2aa62a8eb301",
+            "01655e66-05f0-428b-b80f-f3cd2e21f4d9",
+            "9b4489c1-ddff-4684-80c5-e08b429b1f91",
+            "530ee69c-6089-43ba-b33b-c988f58ac8a2",
+            "3e0a7078-94e9-466b-9d55-d6f4c1953024"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 88621,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
