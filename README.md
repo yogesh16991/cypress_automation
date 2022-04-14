@@ -2,7 +2,13 @@
 
 This file contains details to import the project, steps to execute it and view the reports
 
-Approach: I decided to move with POM design pattern approach as it would be more scalable if more web pages gets added to the application and maintainence could be easy
+**Approach**: I decided to follow POM design pattern approach as:  
+ 1. It would be more scalable if more web pages gets added to the application
+ 2. Maintainence could be easy
+
+**Prerequisites:**
+1. Latest Node.js installed
+2. Visual studio code installed
 
 
 **Technology Used**  
@@ -30,10 +36,11 @@ Approach: I decided to move with POM design pattern approach as it would be more
 
  1. Import project in VS Code
  2. Open Terminal -> New Terminal
- 3. Run command -> npm cypress install ( This will install all node modules) 
+ 3. Run command -> npm cypress install (This will install all node modules) 
  4. Run command -> npm run test
+ 5. Reports gets generated and can be seen under root directory with name **LoginTestReport.html**
 
-Run the project using cypress test runner - 
+**Run the project using cypress test runner** 
  1. Open Terminal -> New Terminal
  2. Run command -> npx cypress open
  3. Once runner window is opened, click on LoginTest.js (Testcase file) 
@@ -41,7 +48,7 @@ Run the project using cypress test runner -
 
 **To view execution reports**
 
- 1. Go to cypress folder -> LoginTestReport.html
+ 1. Go to root folder -> LoginTestReport.html
  2. Video can also be viewed under videos directory when test cases are executed through terminal using command mentioned above (npm run test)
 
 
@@ -49,4 +56,3 @@ Run the project using cypress test runner -
  1. Assertions could be better
  2. More scenarios could be added
  3. Exception handling could be added
-
