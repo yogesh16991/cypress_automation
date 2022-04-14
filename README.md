@@ -34,7 +34,7 @@ This file contains details to import the project, steps to execute it and view t
 
  1. Import project in VS Code
  2. Open Terminal -> New Terminal
- 3. Run command -> npm cypress install (This will install all node modules) 
+ 3. Run command -> npm install cypress (This will install all node modules) 
  4. Run command -> npm run test
  5. Reports gets generated and can be seen under root directory with name **LoginTestReport.html**
 
