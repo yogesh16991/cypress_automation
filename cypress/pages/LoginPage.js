@@ -21,11 +21,15 @@ export class LoginPage {
     pageActions = new PageActions;
 
     navigate(url) {
+        this.pageActions.deleteAllCookies();
         this.pageActions.openPageUrl(url);
+    }
+
+    clickUserIcon(){
         this.pageActions.clickButtonWithTimeout(this.loginPage_bannerAcceptButton, 25000);
         this.pageActions.clickButton(this.loginPage_userIcon);
-
     }
+
     enterCredentials(username, password) {
         this.pageActions.enterTextInto(this.loginPage_username, username);
         this.pageActions.enterTextInto(this.loginPage_password, password);
@@ -75,5 +79,6 @@ export class LoginPage {
         this.pageActions.clickButton(this.loginPage_clickConcludeButton);
     }
 
+    
 
 }

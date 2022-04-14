@@ -1,5 +1,7 @@
 {
+  "baseUrl" : "http://www.douglas.de",
     "chromeWebSecurity" : false,
+    "retries": 2,
     "reporter": "mochawesome",
     "reporterOptions": {
       "charts": true,

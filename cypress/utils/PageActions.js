@@ -27,4 +27,8 @@ export class PageActions {
     clickButtonWithTimeout(ele, delay){
         cy.get(ele, { timeout: delay }).click();
     }
+
+    deleteAllCookies(){   
+        cy.clearCookies();
+    }
 }
