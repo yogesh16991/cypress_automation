@@ -1,4 +1,4 @@
-# Login Page Automation 
+# Login Page Automation using Cypress
 
 This file contains details to import the project, steps to execute it and view the reports
 
@@ -17,11 +17,9 @@ This file contains details to import the project, steps to execute it and view t
 3. IDE - Visual Studio Code
 4. Reporting - Mochawesome reports
 
-
 **This project contains multiple scenarios to validate Login functionality**
 
- 1> All the test cases are stored in a js file named "LoginTest.js" under cypress/integration location
- 
+ 1. All the test cases are stored in a js file named "LoginTest.js" under cypress/integration location
  
 **Framework overview** 
 
